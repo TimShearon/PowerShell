@@ -6,10 +6,10 @@ $endDate = (Get-Date).ToString("yyyy-MM-dd")
 $fileName = "${startDate}--${endDate}"
 
 # Specify the path to the logs folder
-$Logs = "\\js-vessel\Technology\Logging\Server-Logs\Security-Logs"
+$Logs = "Your file path here"
 
 # Specify the path to the destination folder
-$Master = "\\js-vessel\Technology\Logging\Server-Logs\Security-Logs\Master"
+$Master = "Your file path here"
 
 # Get a list of CSV files in the logs folder, excluding the current file
 $CSV = Get-ChildItem $Logs\*.csv -Exclude "$Logs\$fileName Security_Logs.csv"
